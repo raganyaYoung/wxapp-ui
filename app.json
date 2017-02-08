@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/button/button",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序组件",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#d4237a",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-active.png"
+    }, {
+      "pagePath": "pages/button/button",
+      "text": "组件",
+      "iconPath": "images/setting.png",
+      "selectedIconPath": "images/setting-active.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "关于",
+      "iconPath": "images/my.png",
+      "selectedIconPath": "images/my-active.png"
+    }]
+  },
+  "debug": true
+}

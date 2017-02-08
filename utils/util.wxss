@@ -1,0 +1,45 @@
+.title {
+  background: #f5f5f5;
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+}
+
+/**
+ * 经典列表
+ */
+.item-lists {
+
+}
+.item-list {
+  background: #fff;
+  padding: 12px 0;
+}
+.item-list-active {
+  background: rgba(230,230,230,.2);
+}
+.item-list-right {
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  color: #aaa;
+  font-size: 14px;
+}
+.item-list-right-text {
+  margin-right: 4px;
+}
+.item-list-right-icon {
+  position: absolute;
+  right: -12px;
+
+}
+.item-list:last-child {
+  border: none;
+}
+/**
+ * icon
+ */
+.wx-icon {
+  width: 14px;
+  height: 14px;
+}

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="wrapper f14">
+  <view class="list-group" wx:for="{{listData}}" wx:key='{{"title" + index}}'>
+    <view class="title deep-gray-font">{{item.title}}</view>
+    <view class="item-lists wx-border">
+      <view class="deep-gray-font wx-border wx-border-bottom item-list"
+        wx:for="{{item.items}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'
+        hover="{{true}}" hover-class="item-list-active">
+        <text class="ml16">{{v.en}}</text>
+        <view class="item-list-right" style='{{v.noIcon ? "right: 24px" : ""}}'>
+          <text class="item-list-right-text">{{v.ch}}</text>
+          <image class="wx-icon item-list-right-icon"
+            src="../../images/right.png" mode="aspectFit"
+            wx:if="{{v.noIcon}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

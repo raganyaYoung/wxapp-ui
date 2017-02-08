@@ -1,0 +1,7 @@
+/**index.wxss**/
+@import '../../utils/common.wxss';
+@import '../../utils/util.wxss';
+
+.list-group {
+  /*margin-bottom: 16px;*/
+}

@@ -1,0 +1,65 @@
+/**
+ * reset
+ */
+.wrapper {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/**
+ * font
+ */
+.deep-gray-font {
+  color: #444;
+}
+.shallow-gray-font {
+  color: #aaa;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f12 {
+  font-size: 12px;
+}
+
+/**
+ * border
+ */
+.wx-border {
+  -webkit-border-image: url("../../images/line.png") 2 stretch;
+  -o-border-image: url("../../images/line.png") 2 stretch;
+  border-image: url("../../images/line.png") 2 stretch;
+  border-width: 1px;
+  border-style: solid;
+}
+.wx-border-green {
+  -webkit-border-image: url("../../images/line_green.png") 2 stretch;
+  -o-border-image: url("../../images/line_green.png") 2 stretch;
+  border-image: url("../../images/line_green.png") 2 stretch;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+}
+.wx-border-left {
+  border-width: 0 0 0 1px;
+}
+.wx-border-right {
+  border-width: 0 1px 0 0;
+}
+.wx-border-bottom {
+  border-width: 0 0 1px 0;
+}
+.wx-border-top {
+  border-width: 1px 0 0 0;
+}
+
+/**
+ * margin/padding
+ */
+.ml16 {
+  margin-left: 16px;
+}
