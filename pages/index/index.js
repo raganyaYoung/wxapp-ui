@@ -8,11 +8,11 @@ Page({
       items: [{
         en: 'view',
         ch: '视图容器',
-        noIcon: true,
       }, {
         en: 'scroll-view',
-        noIcon: true,
         ch: '可滚动视图区域',
+        noIcon: true,
+        url: '../button/button'
       }, {
         en: 'swiper',
         noIcon: true,
@@ -123,7 +123,8 @@ Page({
         ch: '客服回话',
         noIcon: true,
       }]
-    }]
+    }],
+
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -139,5 +140,13 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  }
+  },
+  getComponentDetail: function(e) {
+    let url = e.currentTarget.dataset.url
+    if(url) {
+      wx.navigateTo({
+        url,
+      })
+    }
+  },
 })

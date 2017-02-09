@@ -8,15 +8,12 @@
 /**
  * 经典列表
  */
-.item-lists {
-
-}
 .item-list {
   background: #fff;
   padding: 12px 0;
 }
 .item-list-active {
-  background: rgba(230,230,230,.2);
+  background: rgba(230,230,230,.3);
 }
 .item-list-right {
   display: inline-block;
@@ -31,7 +28,7 @@
 .item-list-right-icon {
   position: absolute;
   right: -12px;
-
+  top: 2px;
 }
 .item-list:last-child {
   border: none;

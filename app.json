@@ -21,7 +21,7 @@
       "iconPath": "images/home.png",
       "selectedIconPath": "images/home-active.png"
     }, {
-      "pagePath": "pages/button/button",
+      "pagePath": "pages/logs/logs",
       "text": "组件",
       "iconPath": "images/setting.png",
       "selectedIconPath": "images/setting-active.png"
