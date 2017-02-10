@@ -2,7 +2,6 @@
  * reset
  */
 .wrapper {
-  background: #fff;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -35,6 +34,7 @@
   -o-border-image: url("../../images/line.png") 2 stretch;
   border-image: url("../../images/line.png") 2 stretch;
   border-width: 1px;
+  /*border-style: solid;*/
 }
 .wx-border-green {
   -webkit-border-image: url("../../images/line_green.png") 2 stretch;
@@ -58,6 +58,15 @@
 /**
  * margin/padding
  */
+.ml10 {
+  margin-left: 10px;
+}
 .ml16 {
   margin-left: 16px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mr10 {
+  margin-right: 10px;
 }

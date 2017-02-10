@@ -1,21 +1,11 @@
-<!--index.wxml-->
-
 <import src="../../utils/listItem.wxml"/>
 
-<view class="container f14">
-  <view class="headline">
-    <view>
-      <image class="logo"
-        src="../../images/ui.png" mode="aspectFit"></image>
-    </view>
-    <view class="desc">
-      <text>微信小程序组件</text>
-    </view>
-  </view>
-
+<view class="wrapper f14">
   <view class="list-group" wx:for="{{listData}}" wx:key='{{"title" + index}}'>
+    <view class="title deep-gray-font">{{item.title}}</view>
     <block wx:for="{{item.items}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'>
       <template is="itemList" data="{{v}}"></template>
     </block>
   </view>
 </view>
+

@@ -2,6 +2,23 @@
 @import '../../utils/common.wxss';
 @import '../../utils/util.wxss';
 
-.list-group {
-  /*margin-bottom: 16px;*/
+.container {
+  height: 100%;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  color: #999;
+  padding: 10px 0 20px;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }

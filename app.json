@@ -1,8 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/button/button",
-    "pages/logs/logs"
+    "pages/component/component",
+    "pages/progress/progress",
+    "pages/scrollView/scrollView",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/icon/icon"
   ],
   "window":{
     "backgroundTextStyle":"dark",
@@ -12,7 +16,7 @@
   },
   "tabBar": {
     "color": "black",
-    "selectedColor": "#d4237a",
+    "selectedColor": "#e16531",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [{
@@ -21,7 +25,7 @@
       "iconPath": "images/home.png",
       "selectedIconPath": "images/home-active.png"
     }, {
-      "pagePath": "pages/logs/logs",
+      "pagePath": "pages/component/component",
       "text": "组件",
       "iconPath": "images/setting.png",
       "selectedIconPath": "images/setting-active.png"

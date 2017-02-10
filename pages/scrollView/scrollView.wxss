@@ -1,0 +1,12 @@
+/* pages/scrollView/scrollView.wxss */
+@import '../../utils/common.wxss'
+@import '../../utils/util.wxss'
+
+.scroll-view1 {
+  background: #e16531;
+  height: 100px;
+  padding: 10px;
+}
+.input {
+  text-align:center;
+}

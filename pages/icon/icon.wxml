@@ -1,0 +1,34 @@
+<!--pages/icon/icon.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>图标</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <template is="radioGroup" data="{{...colorTemplate}}"></template>
+  <template is="radioGroup" data="{{...sizeTemplate}}"></template>
+
+  <scroll-view scroll-y="true" scroll-x="true" style="background: #fff; height: 400px; padding: 10px;">
+    <block wx:for="{{iconType}}">
+      <view>
+        <text>{{item}}：</text>
+        <icon class="icon" type="{{item}}" size="{{targetSize}}" color="{{targetColor}}"></icon>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+
+<template name="radioGroup">
+  <view class="radio-group">
+    <view>
+      <text>{{label}}：</text>
+    </view>
+    <view>
+      <radio-group style="display:inline-block;" bindchange="{{event}}">
+        <label wx:for="{{items}}">
+          {{item}}：<radio value="{{item}}"/>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</template>

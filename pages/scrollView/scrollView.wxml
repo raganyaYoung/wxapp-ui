@@ -1,0 +1,25 @@
+<!--pages/scrollView/scrollView.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>可滚动视图区域</text>
+    <view class="cut-line"></view>
+  </view>
+  <view class="mb10">
+    <button class="f14 deep-gray-font" data-direction="y"
+      bindtap="scrollY">{{scrollY ? '不允许' : '允许'}}纵向滚动</button>
+  </view>
+  <view class="mb10">
+    <input class="input" type="number" maxlength="100"
+      bindinput="handleInput" placeholder="快速滚动到第几行" />
+  </view>
+  <view class="mb10">
+    <button class="f14 deep-gray-font" bindtap="handleToast">{{showToast ? '不显示' : '显示'}}到底提示</button>
+  </view>
+  <scroll-view class="scroll-view1"
+    scroll-y="{{scrollY}}"
+    bindscroll="handleScroll"
+    scroll-into-view='{{"line"+scrollIntoView}}'
+    bindscrolltolower="handleScrollToLower">
+    <view wx:for="{{demoLine}}" id='{{"line"+(index+1)}}'>{{item}} line</view>
+  </scroll-view>
+</view>

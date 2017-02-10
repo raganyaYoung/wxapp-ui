@@ -1,13 +1,6 @@
 // pages/button/button.js
 Page({
-  data:{
-    size: 'default',
-    type: 'default',
-    loading: false,
-    plain: false,
-    disabled: false,
-    
-  },
+  data:{},
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },

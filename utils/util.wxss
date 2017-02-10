@@ -30,6 +30,9 @@
   right: -12px;
   top: 2px;
 }
+.item-list-left-icon {
+  margin-left: 16px;
+}
 .item-list:last-child {
   border: none;
 }
@@ -39,4 +42,22 @@
 .wx-icon {
   width: 14px;
   height: 14px;
+}
+
+/**
+ * 每个组件页
+ */
+.component-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0 16px;
+}
+.cut-line {
+  width: 50%;
+  height: 1px;
+  background: #1296db;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }

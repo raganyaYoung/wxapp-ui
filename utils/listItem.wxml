@@ -10,12 +10,13 @@
   <view class="item-lists wx-border">
     <view class="deep-gray-font wx-border wx-border-bottom item-list"
       hover="{{true}}" hover-class="item-list-active" data-url="{{v.url}}" bindtap="getComponentDetail">
-      <text class="ml16">{{v.en}}</text>
+      <text class="ml16" wx:if="{{v.left}}">{{v.left}}</text>
+      <image class="wx-icon item-list-left-icon" wx:if="{{v.leftIcon}}"
+        src="{{v.leftIcon}}" mode="aspectFit"></image>
       <view class="item-list-right" style='{{v.noIcon ? "right: 24px" : ""}}'>
-        <text class="item-list-right-text">{{v.ch}}</text>
-        <image class="wx-icon item-list-right-icon"
-          src="../../images/right.png" mode="aspectFit"
-          wx:if="{{v.noIcon}}"></image>
+        <text class="item-list-right-text">{{v.right}}</text>
+        <image class="wx-icon item-list-right-icon" wx:if="{{v.noIcon}}"
+          src="../../images/right.png" mode="aspectFit"></image>
       </view>
     </view>
   </view>

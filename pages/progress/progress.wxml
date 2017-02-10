@@ -1,0 +1,49 @@
+<!--pages/progress/progress.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>进度条</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="mb10">
+    <button class="f14 deep-gray-font" bindtap="handleShowInfo">在进度条右侧{{showInfo ? '不显示' : '显示'}}百分比</button>
+  </view>
+  <view class="demo-progress mb10 ml10 mr10">
+    <progress percent="60" showInfo="{{showInfo}}"/>
+  </view>
+
+  <view class="mb10">
+    <input class="input" type="number" maxlength="3"
+      bindinput="handlePercent" placeholder="为进度条设置百分比" />
+  </view>
+  <view class="demo-progress mb10 ml10 mr10">
+    <progress percent="{{percent}}" showInfo="{{true}}"/>
+  </view>
+
+  <view class="mb10">
+    <input class="input" type="number" maxlength="3"
+      bindinput="handleWidth" placeholder="进度条线的宽度，单位px，默认6" />
+  </view>
+  <view class="demo-progress mb10 ml10 mr10">
+    <progress percent="50" stroke-width="{{width}}" showInfo="{{true}}"/>
+  </view>
+
+  <view class="mb10">
+    <button class="f14 deep-gray-font" bindtap="handleAnimation">
+      {{animation ? '不设置' : '设置'}}进度条从左往右的动画
+    </button>
+  </view>
+  <view class="demo-progress mb10 ml10 mr10">
+    <progress percent="60" showInfo="{{true}}" active="{{animation}}"/>
+  </view>
+
+  <view class="radio-group">
+    <view>
+      <text>可设置任意颜色：</text>
+    </view>
+  </view>
+  <view class="demo-progress mb10 ml10 mr10" wx:for="{{colors}}">
+    {{item}}：
+    <progress percent="70" showInfo="{{true}}" color="{{item}}"/>
+  </view>
+</view>
