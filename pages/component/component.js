@@ -124,6 +124,7 @@ Page({
         left: 'contact-button',
         right: '客服回话',
         noIcon: true,
+
       }]
     }],
 
