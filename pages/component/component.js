@@ -45,26 +45,31 @@ Page({
         left: 'radio',
         right: '单项选择器',
         noIcon: true,
+        url: '../radio/radio'
       }, {
         left: 'checkbox',
         right: '多项选择器',
         noIcon: true,
+        url: '../checkbox/checkbox'
       }, {
         left: 'form',
         right: '表单',
         noIcon: true,
+        url: '../form/form'
       }, {
         left: 'input',
         right: '输入框',
         noIcon: true,
+        url: '../input/input'
       }, {
-        left: 'label',
-        right: '标签',
+        left: 'textarea',
+        right: '文本框',
         noIcon: true,
       }, {
         left: 'picker',
         right: '选择器',
         noIcon: true,
+        url: '../picker/picker'
       }, {
         left: 'picker-view',
         right: '可滚动选择器',
@@ -76,10 +81,6 @@ Page({
       }, {
         left: 'switch',
         right: '开关选择器',
-        noIcon: true,
-      }, {
-        left: 'textarea',
-        right: '文本框',
         noIcon: true,
       }]
     }, {
@@ -124,7 +125,6 @@ Page({
         left: 'contact-button',
         right: '客服回话',
         noIcon: true,
-
       }]
     }],
 

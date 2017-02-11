@@ -1,2 +1,47 @@
 <!--pages/button/button.wxml-->
-<text>pages/button/button.wxml</text>
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>按钮</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：以下按钮中字体为14px，默认button字体为16px
+    </view>
+  </view>
+
+  <view class="btn-view">
+    <view class="mb10 pl10">
+      type(size="mini")：
+    </view>
+    <view style="display: flex; justify-content: flex-start;">
+      <block wx:for="{{types}}">
+        <button type="{{item}}" size="mini">{{item}}</button>
+      </block>
+    </view>
+  </view>
+
+  <view class="btn-view">
+    <view class="mb10 pl10">
+      size：
+    </view>
+    <block wx:for="{{sizes}}">
+      <button size="{{item}}">{{item}}</button>
+    </block>
+  </view>
+
+  <view class="btn-view">
+    <view class="mb10 pl10">
+      styles：
+    </view>
+    <view style="display: flex; justify-content: flex-start;" wx:for="{{types}}">
+      <button type="{{item}}" size="mini" hover-class="{{hoverClass}}" plain="{{true}}">plain</button>
+      <button type="{{item}}" size="mini" hover-class="{{hoverClass}}" disabled="{{true}}">disabled</button>
+      <button type="{{item}}" size="mini" hover-class="{{hoverClass}}" loading="{{true}}">loading</button>
+    </view>
+  </view>
+
+  <view class="btn-view">
+    <button class="deep-gray-font" bindtap="handleHoverClass">
+      为以上按钮{{hoverClass=== 'button-hover' ? '不设置' : '设置'}}点击态效果
+    </button>
+  </view>
+</view>

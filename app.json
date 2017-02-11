@@ -1,7 +1,12 @@
 {
   "pages":[
-    "pages/button/button",
     "pages/component/component",
+    "pages/checkbox/checkbox",
+    "pages/radio/radio",
+    "pages/form/form",
+    "pages/input/input",
+    "pages/picker/picker",
+    "pages/button/button",
     "pages/progress/progress",
     "pages/scrollView/scrollView",
     "pages/index/index",
@@ -12,7 +17,8 @@
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小程序组件",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fff"
   },
   "tabBar": {
     "color": "black",

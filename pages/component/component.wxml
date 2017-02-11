@@ -1,6 +1,6 @@
 <import src="../../utils/listItem.wxml"/>
 
-<view class="wrapper f14">
+<view class="wrapper f14" style="box-sizing: border-box;">
   <view class="list-group" wx:for="{{listData}}" wx:key='{{"title" + index}}'>
     <view class="title deep-gray-font">{{item.title}}</view>
     <block wx:for="{{item.items}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'>

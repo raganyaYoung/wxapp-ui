@@ -1,0 +1,14 @@
+<!--pages/radio/radio.wxml-->
+<!--pages/button/button.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>单项选择器</text>
+    <view class="cut-line"></view>
+    <!-- <view class="tips f12 shallow-gray-font">
+      说明：以下按钮中字体为14px，默认button字体为16px
+    </view> -->
+  </view>
+
+
+</view>
+

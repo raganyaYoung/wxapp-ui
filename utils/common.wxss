@@ -64,9 +64,16 @@
 .ml16 {
   margin-left: 16px;
 }
+.mr10 {
+  margin-right: 10px;
+}
 .mb10 {
   margin-bottom: 10px;
 }
-.mr10 {
-  margin-right: 10px;
+.mt10 {
+  margin-top: 10px;
+}
+
+.pl10 {
+  padding-left: 10px;
 }
