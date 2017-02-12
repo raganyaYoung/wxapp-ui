@@ -1,2 +1,36 @@
 <!--pages/checkbox/checkbox.wxml-->
-<text>pages/checkbox/checkbox.wxml</text>
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>多项选择器</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="demo-view">
+    <view class="mb10">
+      styles：
+    </view>
+    <view style="display: flex; justify-content: flex-start;">
+      <label>
+        default <checkbox value="default"/>
+      </label>
+      <label>
+        checked <checkbox value="checked" checked="{{true}}"/>
+      </label>
+      <label>
+        disabled <checkbox value="disabled" disabled="{{true}}"/>
+      </label>
+    </view>
+  </view>
+
+  <view class="demo-view">
+    <view>
+      <text>可任意变换颜色：</text>
+    </view>
+    <view>
+        <label wx:for="{{colors}}" style="display:inline-block;" class="mt10">
+          {{item}}：<checkbox value="{{item}}" color="{{item}}" checked="{{true}}"/>
+        </label>
+    </view>
+  </view>
+</view>
+

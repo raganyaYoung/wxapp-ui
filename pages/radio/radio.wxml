@@ -1,14 +1,38 @@
 <!--pages/radio/radio.wxml-->
-<!--pages/button/button.wxml-->
-<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+<view class="f14 deep-gray-font border-content">
   <view class="component-title">
     <text>单项选择器</text>
     <view class="cut-line"></view>
-    <!-- <view class="tips f12 shallow-gray-font">
-      说明：以下按钮中字体为14px，默认button字体为16px
-    </view> -->
   </view>
 
+  <view class="btn-view">
+    <view class="mb10">
+      styles：
+    </view>
+    <view style="display: flex; justify-content: flex-start;">
+      <label>
+        default <radio value="default"/>
+      </label>
+      <label>
+        checked <radio value="checked" checked="{{true}}"/>
+      </label>
+      <label>
+        disabled <radio value="disabled" disabled="{{true}}"/>
+      </label>
+    </view>
+  </view>
 
+  <view class="btn-view">
+    <view>
+      <text>可任意变换颜色：</text>
+    </view>
+    <view>
+      <radio-group style="display:inline-block;" bindchange="handleColor">
+        <label wx:for="{{colors}}">
+          {{item}}：<radio value="{{item}}" color="{{color}}"/>
+        </label>
+      </radio-group>
+    </view>
+  </view>
 </view>
 

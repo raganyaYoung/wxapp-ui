@@ -3,6 +3,7 @@
   display: block;
   width: 100%;
   padding: 14px 16px;
+  box-sizing: border-box;
 }
 
 /**
@@ -60,4 +61,13 @@
   background: #1296db;
   margin-top: 8px;
   margin-bottom: 20px;
+}
+
+/**
+ * demo 样式
+ */
+.demo-view {
+  padding: 8px 10px;
+  margin: 10px 0;
+  background: #fff;
 }

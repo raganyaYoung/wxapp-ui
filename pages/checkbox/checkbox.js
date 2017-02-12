@@ -1,19 +1,12 @@
 // pages/checkbox/checkbox.js
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data:{
+    color: '',
+    colors: ['#ea5a49', '#4a90e2', '#4cd964', '#ffbd17', '#11c1f3', '#484746'],
   },
-  onReady:function(){
-    // 页面渲染完成
-  },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
+  handleColor: function(e) {
+    this.setData({
+      color: e.detail.value
+    })
   }
 })

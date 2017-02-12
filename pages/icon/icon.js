@@ -20,7 +20,7 @@ Page({
       event: 'handleSize',
     },
     colorTemplate: {
-      items: ['red', 'orange', 'yellow', 'green', 'rgb(0,255,255)', 'blue', 'purple'],
+      items: ['#ea5a49', '#4a90e2', '#4cd964', '#ffbd17', '#11c1f3', '#484746' ],
       label: '可控制颜色',
       event: 'handleColor',
     }
