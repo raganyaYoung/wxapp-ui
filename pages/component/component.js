@@ -52,11 +52,6 @@ Page({
         noIcon: true,
         url: '../checkbox/checkbox'
       }, {
-        left: 'form',
-        right: '表单',
-        noIcon: true,
-        url: '../form/form'
-      }, {
         left: 'input',
         right: '输入框',
         noIcon: true,
@@ -82,6 +77,11 @@ Page({
         left: 'switch',
         right: '开关选择器',
         noIcon: true,
+      }, {
+        left: 'form',
+        right: '表单',
+        noIcon: true,
+        url: '../form/form'
       }]
     }, {
       title: '导航',

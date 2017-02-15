@@ -7,7 +7,7 @@
 }
 
 /**
- * 经典列表
+ * 经典列表start
  */
 .item-list {
   background: #fff;
@@ -34,9 +34,19 @@
 .item-list-left-icon {
   margin-left: 16px;
 }
-.item-list:last-child {
-  border: none;
+/*让最后一个item-list元素 显示边框*/
+.item-list:last-child:after {
+  border-bottom: 1px solid #ddd;
+  content: ' ';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
+/**
+ * 经典列表end
+ */
+
 /**
  * icon
  */

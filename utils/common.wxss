@@ -30,14 +30,12 @@
 }
 
 /**
- * border
+ * border images 此类方法在小程序中不显示，奈何只能用下面这种方法让 1px边框 变苗条
  */
 .wx-border {
-  -webkit-border-image: url("../../images/line.png") 2 stretch;
-  -o-border-image: url("../../images/line.png") 2 stretch;
-  border-image: url("../../images/line.png") 2 stretch;
+  border-image: url("../../images/line.png") 2 repeat;
   border-width: 1px;
-  /*border-style: solid;*/
+  border-style: solid;
 }
 .wx-border-green {
   -webkit-border-image: url("../../images/line_green.png") 2 stretch;
@@ -57,6 +55,58 @@
 .wx-border-top {
   border-width: 1px 0 0 0;
 }
+/**
+ * border images
+ */
+
+/**
+ * border start
+ * wx-border-bottom 添加底边框
+ * wx-border-top 添加上边框
+ * wx-border-vertical 添加上下边框
+ */
+.wx-border-bottom, .wx-border-top, .wx-border-vertical{
+  position: relative;
+}
+.wx-border-top:before, .wx-border-bottom:after,
+.wx-border-vertical:before, .wx-border-vertical:after {
+  border-bottom: 1px solid #ddd;
+  content: ' ';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.wx-border-bottom:before, .wx-border-top:before, .wx-border-vertical:before {
+  top: 0;
+}
+.wx-border-bottom:after, .wx-border-top:after, .wx-border-vertical:after {
+  bottom: 0;
+}
+@media (-webkit-min-device-pixel-ratio:1.5), (min-device-pixel-ratio: 1.5){
+  .wx-border-bottom::after, .wx-border-bottom::before,
+  .wx-border-top::after, .wx-border-top::before,
+  .wx-border-vertical::after, .wx-border-vertical::before {
+    -webkit-transform: scaleY(.9);
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(.9);
+  }
+  .wx-border-bottom:after,.wx-border-top:after {
+    -webkit-transform-origin: left bottom;
+  }
+}
+@media (-webkit-min-device-pixel-ratio:2), (min-device-pixel-ratio: 2){
+  .wx-border-bottom::after, .wx-border-bottom::before,
+  .wx-border-top::after, .wx-border-top::before,
+  .wx-border-vertical::after, .wx-border-vertical::before {
+    -webkit-transform: scaleY(.4);
+    transform: scaleY(.4);
+  }
+}
+/**
+ * border end
+ */
+
 
 /**
  * margin/padding

@@ -1,10 +1,10 @@
 {
   "pages":[
     "pages/component/component",
+    "pages/input/input",
     "pages/checkbox/checkbox",
     "pages/radio/radio",
     "pages/form/form",
-    "pages/input/input",
     "pages/picker/picker",
     "pages/button/button",
     "pages/progress/progress",

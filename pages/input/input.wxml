@@ -1,2 +1,17 @@
 <!--pages/input/input.wxml-->
-<text>pages/input/input.wxml</text>
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>输入框</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="demo-view">
+    <view class="mb10">
+      types：
+    </view>
+    <view wx:for="{{types}}" class="input-view">
+      <input type="{{item}}" placeholder="{{item}}" />
+    </view>
+  </view>
+
+</view>

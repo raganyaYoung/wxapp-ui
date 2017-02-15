@@ -1,1 +1,12 @@
 /* pages/input/input.wxss */
+@import '../../utils/common.wxss'
+@import '../../utils/util.wxss'
+
+.input-view {
+  display: flex;
+  justify-content: flex-start;
+
+}
+.input-view input {
+  width: 100%;
+}
