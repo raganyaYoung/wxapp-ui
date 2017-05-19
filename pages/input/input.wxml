@@ -7,11 +7,30 @@
 
   <view class="demo-view">
     <view class="mb10">
-      types：
+      输入框类型：
     </view>
-    <view wx:for="{{types}}" class="input-view">
+    <!-- <view wx:for="{{types}}" class="input-view">
       <input type="{{item}}" placeholder="{{item}}" />
-    </view>
+    </view> -->
+
+    <block wx:for="{{types}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'>
+      <template is="itemListForm" data="{{v}}"></template>
+    </block>
   </view>
 
 </view>
+
+<template name="itemListForm">
+  <view class="item-list wx-border-bottom deep-gray-font bg-white">
+    <!-- 左边文字 -->
+    <text>{{v.label}}</text>
+
+    <!-- 右边input -->
+    <view class="item-list-right" style='{{v.noIcon ? "right: 24px" : ""}} text-align: right;'>
+      <input type="{{v.inputType}}" placeholder="{{v.placeholder}}"/>
+      <image class="wx-icon item-list-right-icon" wx:if="{{v.noIcon}}"
+        src="../../images/right.png" mode="aspectFit"></image>
+    </view>
+
+  </view>
+</template>

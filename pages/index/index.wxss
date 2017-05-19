@@ -15,10 +15,19 @@
   padding: 0;
   flex-direction: column;
   color: #999;
-  padding: 10px 0 20px;
+  padding: 10px 0 40px;
 }
 .logo {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
+}
+
+.item-list:last-child:after {
+  border-bottom: 1px solid #ddd;
+  content: ' ';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
 }

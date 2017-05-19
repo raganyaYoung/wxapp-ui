@@ -1,0 +1,33 @@
+<!--pages/component/pickerView.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>滚动选择器</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：嵌入页面的滚动选择器。
+    </view>
+  </view>
+
+  <view>
+    <text class="ml10 mt10 inline-block">自制日期选择器：</text>
+  </view>
+
+
+  <view class="demo-view mb20">
+    <view bindtap="bindClick">当前选择是：{{year}}年{{month}}月{{day}}日</view>
+    <picker-view indicator-style="height: 50px;"
+      style="width: 100%; height: 300px;margin-top: 16px; display: {{visible ? '' : 'none'}};"
+      value="{{time}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" style="line-height: 50px; text-align: center;">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" style="line-height: 50px; text-align: center;">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" style="line-height: 50px; text-align: center;">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+

@@ -9,9 +9,11 @@
 /**
  * 经典列表start
  */
-.item-list {
+.item-lists {
   background: #fff;
-  padding: 12px 0;
+}
+.item-list {
+  padding: 12px 0 11px;
 }
 .item-list-active {
   background: rgba(230,230,230,.3);
@@ -29,19 +31,20 @@
 .item-list-right-icon {
   position: absolute;
   right: -12px;
-  top: 2px;
+  top: 3px;
 }
 .item-list-left-icon {
   margin-left: 16px;
 }
 /*让最后一个item-list元素 显示边框*/
 .item-list:last-child:after {
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;
   content: ' ';
   display: block;
   width: 100%;
   position: absolute;
-  left: 0;
+  left: 0;*/
+  border-bottom: none;
 }
 /**
  * 经典列表end

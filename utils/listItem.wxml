@@ -7,16 +7,19 @@
 -->
 
 <template name="itemList">
-  <view class="deep-gray-font wx-border-top item-list"
+  <view class="deep-gray-font wx-border-bottom item-list ml16"
     hover="{{true}}" hover-class="item-list-active" data-url="{{v.url}}" bindtap="getComponentDetail">
-    <text class="ml16" wx:if="{{v.left}}">{{v.left}}</text>
+
+    <text class="" wx:if="{{v.left}}">{{v.left}}</text>
     <image class="wx-icon item-list-left-icon" wx:if="{{v.leftIcon}}"
       src="{{v.leftIcon}}" mode="aspectFit"></image>
+
     <view class="item-list-right" style='{{v.noIcon ? "right: 24px" : ""}}'>
       <text class="item-list-right-text">{{v.right}}</text>
       <image class="wx-icon item-list-right-icon" wx:if="{{v.noIcon}}"
         src="../../images/right.png" mode="aspectFit"></image>
     </view>
+
   </view>
 </template>
 

@@ -8,14 +8,14 @@
     <button class="f14 deep-gray-font" data-direction="y"
       bindtap="scrollY">{{scrollY ? '不允许' : '允许'}}纵向滚动</button>
   </view>
-  <view class="mb10">
-    <input class="input" type="number" maxlength="100"
+  <view class="mb10 wx-border-vertical bg-white">
+    <input class="input input-view" type="number" maxlength="2"
       bindinput="handleInput" placeholder="快速滚动到第几行" />
   </view>
   <view class="mb10">
     <button class="f14 deep-gray-font" bindtap="handleToast">{{showToast ? '不显示' : '显示'}}到底提示</button>
   </view>
-  <scroll-view class="scroll-view1"
+  <scroll-view class="scroll-view wx-border-vertical bg-jqc"
     scroll-y="{{scrollY}}"
     bindscroll="handleScroll"
     scroll-into-view='{{"line"+scrollIntoView}}'

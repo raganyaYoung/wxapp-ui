@@ -12,7 +12,7 @@
     <progress percent="60" showInfo="{{showInfo}}"/>
   </view>
 
-  <view class="mb10">
+  <view class="mb10 wx-border-vertical bg-white">
     <input class="input" type="number" maxlength="3"
       bindinput="handlePercent" placeholder="为进度条设置百分比" />
   </view>
@@ -20,7 +20,7 @@
     <progress percent="{{percent}}" showInfo="{{true}}"/>
   </view>
 
-  <view class="mb10">
+  <view class="mb10 wx-border-vertical bg-white">
     <input class="input" type="number" maxlength="3"
       bindinput="handleWidth" placeholder="进度条线的宽度，单位px，默认6" />
   </view>

@@ -60,6 +60,7 @@ Page({
         left: 'textarea',
         right: '文本框',
         noIcon: true,
+        url: '../textarea/textarea'
       }, {
         left: 'picker',
         right: '选择器',
@@ -69,6 +70,7 @@ Page({
         left: 'picker-view',
         right: '可滚动选择器',
         noIcon: true,
+        url: '../pickerView/pickerView'
       }, {
         left: 'slider',
         right: '滑动选择器',

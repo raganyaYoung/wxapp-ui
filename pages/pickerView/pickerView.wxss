@@ -1,4 +1,4 @@
-/* pages/picker/picker.wxss */
+/* pages/component/pickerView.wxss */
 @import '../../utils/util.wxss'
 @import '../../utils/common.wxss'
 

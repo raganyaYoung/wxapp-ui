@@ -1,0 +1,7 @@
+/* pages/textarea/textarea.wxss */
+@import '../../utils/common.wxss'
+@import '../../utils/util.wxss'
+
+textarea {
+  width: 100%;
+}

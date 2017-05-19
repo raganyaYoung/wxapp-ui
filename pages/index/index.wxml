@@ -1,7 +1,5 @@
 <!--index.wxml-->
 
-<import src="../../utils/listItem.wxml"/>
-
 <view class="container f14">
   <view class="headline">
     <view>
@@ -13,9 +11,26 @@
     </view>
   </view>
 
-  <view class="list-group" wx:for="{{listData}}" wx:key='{{"title" + index}}'>
+  <view class="list-group bg-white" wx:for="{{listData}}" wx:key='{{"title" + index}}'>
     <block wx:for="{{item.items}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'>
       <template is="itemList" data="{{v}}"></template>
     </block>
   </view>
 </view>
+
+<template name="itemList">
+  <view class="deep-gray-font wx-border-top item-list"
+    hover="{{true}}" hover-class="item-list-active" data-url="{{v.url}}" bindtap="getComponentDetail">
+
+    <image class="wx-icon item-list-left-icon" wx:if="{{v.leftIcon}}"
+      src="{{v.leftIcon}}" mode="aspectFit"></image>
+    <text wx:if="{{v.left}}">{{v.left}}</text>
+
+    <view class="item-list-right" style='{{v.noIcon ? "right: 24px" : ""}}'>
+      <text class="item-list-right-text">{{v.right}}</text>
+      <image class="wx-icon item-list-right-icon" wx:if="{{v.noIcon}}"
+        src="../../images/right.png" mode="aspectFit"></image>
+    </view>
+
+  </view>
+</template>

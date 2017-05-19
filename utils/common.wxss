@@ -9,6 +9,9 @@
 .border-content {
   box-sizing: border-box;
 }
+.inline-block {
+  display: inline-block;
+}
 
 /**
  * font
@@ -18,6 +21,9 @@
 }
 .shallow-gray-font {
   color: #aaa;
+}
+.white-font {
+  color: #fff;
 }
 .f14 {
   font-size: 14px;
@@ -32,7 +38,7 @@
 /**
  * border images 此类方法在小程序中不显示，奈何只能用下面这种方法让 1px边框 变苗条
  */
-.wx-border {
+/*.wx-border {
   border-image: url("../../images/line.png") 2 repeat;
   border-width: 1px;
   border-style: solid;
@@ -54,7 +60,7 @@
 }
 .wx-border-top {
   border-width: 1px 0 0 0;
-}
+}*/
 /**
  * border images
  */
@@ -70,7 +76,7 @@
 }
 .wx-border-top:before, .wx-border-bottom:after,
 .wx-border-vertical:before, .wx-border-vertical:after {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ccc;
   content: ' ';
   display: block;
   width: 100%;
@@ -87,11 +93,11 @@
   .wx-border-bottom::after, .wx-border-bottom::before,
   .wx-border-top::after, .wx-border-top::before,
   .wx-border-vertical::after, .wx-border-vertical::before {
-    -webkit-transform: scaleY(.9);
+    -webkit-transform: scaleY(.8);
     -webkit-transform-origin: 0 0;
-    transform: scaleY(.9);
+    transform: scaleY(.8);
   }
-  .wx-border-bottom:after,.wx-border-top:after {
+  .wx-border-bottom:after,.wx-border-top:after, .wx-border-vertical:after {
     -webkit-transform-origin: left bottom;
   }
 }
@@ -99,8 +105,8 @@
   .wx-border-bottom::after, .wx-border-bottom::before,
   .wx-border-top::after, .wx-border-top::before,
   .wx-border-vertical::after, .wx-border-vertical::before {
-    -webkit-transform: scaleY(.4);
-    transform: scaleY(.4);
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
   }
 }
 /**
@@ -126,7 +132,66 @@
 .mt10 {
   margin-top: 10px;
 }
+.mb16 {
+  margin-bottom: 16px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
 
 .pl10 {
   padding-left: 10px;
 }
+.pr10 {
+  padding-right: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+/**
+ * margin/padding end
+ */
+
+/**
+ * background start
+ */
+.bg-yellow {
+  background: yellow;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-jqc {
+  /*錆青磁*/
+  background: #86A697;
+}
+.bg-SUOH {
+  /*苏芳，SUOH*/
+  background: #8E354A;
+}
+.bg-HATOBANEZUMI {
+  /*鳩羽鼠, HATOBANEZUMI*/
+  background: #72636E;
+}
+.bg-GINNEZUMI {
+  /*銀鼠, GINNEZUMI*/
+  background: #91989F;
+}
+.bg-SENSAICHA {
+  /*千歳茶, SENSAICHA*/
+  background: #4D5139;
+}
+.bg-FUKAGAWANEZUMI {
+  /*深川鼠, FUKAGAWANEZUMI*/
+  background: #77969A;
+}
+.bg-TORINOKO {
+  /*鳥の子, TORINOKO*/
+  background: #DAC9A6;
+}
+/**
+ * background end
+ */

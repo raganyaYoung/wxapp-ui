@@ -1,14 +1,16 @@
 {
   "pages":[
     "pages/component/component",
+    "pages/pickerView/pickerView",
+    "pages/picker/picker",
+    "pages/textarea/textarea",
     "pages/input/input",
+    "pages/scrollView/scrollView",
     "pages/checkbox/checkbox",
     "pages/radio/radio",
     "pages/form/form",
-    "pages/picker/picker",
     "pages/button/button",
     "pages/progress/progress",
-    "pages/scrollView/scrollView",
     "pages/index/index",
     "pages/logs/logs",
     "pages/icon/icon"
@@ -41,6 +43,5 @@
       "iconPath": "images/my.png",
       "selectedIconPath": "images/my-active.png"
     }]
-  },
-  "debug": true
+  }
 }

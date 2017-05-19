@@ -1,0 +1,17 @@
+<!--pages/textarea/textarea.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>文本框</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="demo-view">
+    <textarea placeholder="框高度可随文本高度自动变化auto-height" class="wx-border-vertical pt10 pb10" auto-height>
+    </textarea>
+  </view>
+
+  <view class="demo-view">
+    <textarea placeholder="框高度不随文本高度自动变化auto-height=false" class="wx-border-vertical pt10 pb10 mt10">
+    </textarea>
+  </view>
+</view>

@@ -8,7 +8,7 @@
   <template is="radioGroup" data="{{...colorTemplate}}"></template>
   <template is="radioGroup" data="{{...sizeTemplate}}"></template>
 
-  <scroll-view scroll-y="true" scroll-x="true" style="background: #fff; height: 400px; padding: 10px;">
+  <scroll-view class="wx-border-vertical" scroll-y="true" scroll-x="true" style="background: #fff; height: 400px; padding: 10px;">
     <block wx:for="{{iconType}}">
       <view>
         <text>{{item}}：</text>
@@ -19,9 +19,9 @@
 </view>
 
 <template name="radioGroup">
-  <view class="radio-group">
+  <view class="radio-group wx-border-vertical bg-white">
     <view>
-      <text>{{label}}：</text>
+      <text class="inline-block mb10">{{label}}：</text>
     </view>
     <view>
       <radio-group style="display:inline-block;" bindchange="{{event}}">

@@ -2,11 +2,13 @@
 @import '../../utils/common.wxss'
 @import '../../utils/util.wxss'
 
-.scroll-view1 {
-  background: #e16531;
-  height: 100px;
-  padding: 10px;
+.scroll-view {
+  height: 180px;
+  padding: 10px 0 10px 10px;
 }
 .input {
   text-align:center;
+}
+.input-view {
+  padding: 6px 0;
 }

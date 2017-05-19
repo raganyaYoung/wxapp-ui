@@ -1,2 +1,47 @@
 <!--pages/picker/picker.wxml-->
-<text>pages/picker/picker.wxml</text>
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>选择器</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：从底部弹起的滚动选择器，现支持三种选择器，通过mode来区分，分别是普通选择器，时间选择器，日期选择器，默认是普通选择器。
+    </view>
+  </view>
+
+  <view class="inline-block ml10 mb16 mt10">
+    <text>禁用以下选择器：</text>
+    <switch bindchange="bindSwitchChange" checked="{{disabled}}"></switch>
+  </view>
+
+  <view>
+    <text class="ml10 inline-block">地区选择器：</text>
+  </view>
+  <view class="demo-view mb20">
+    <picker range="{{cities}}" mode="selector"
+      bindchange="bindCityChange" value="{{selectedCity}}" disabled="{{disabled}}">
+      <view>当前选择是：{{cities[selectedCity]}}</view>
+    </picker>
+  </view>
+
+  <view>
+    <text class="ml10 inline-block">日期选择器：</text>
+  </view>
+  <view class="demo-view mb20">
+    <picker mode="date"
+      start="2012-12-12" end="2018-12-12"
+      bindchange="bindDateChange" value="{{selectedDate}}" disabled="{{disabled}}">
+      <view>当前选择是：{{selectedDate}}</view>
+    </picker>
+  </view>
+
+  <view>
+    <text class="ml10 inline-block">时间选择器：</text>
+  </view>
+  <view class="demo-view">
+    <!-- start="00:00" end="24:00" -->
+    <picker mode="time"
+      bindchange="bindTimeChange" value="{{selectedTime}}" disabled="{{disabled}}">
+      <view>当前选择是：{{selectedTime}}</view>
+    </picker>
+  </view>
+</view>
