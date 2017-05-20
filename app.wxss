@@ -8,3 +8,6 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } */
+
+@import 'utils/common.wxss';
+@import 'utils/util.wxss';

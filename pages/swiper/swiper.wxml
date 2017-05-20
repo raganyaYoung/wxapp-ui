@@ -1,0 +1,36 @@
+<!--pages/swiper/swiper.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>轮播</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：滑块视图容器
+    </view>
+  </view>
+
+  <view class="mb20">
+    <swiper autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" indicator-dots="{{indicatorDots}}">
+      <swiper-item wx:for="{{imgUrls}}" wx:key="image-{{index}}">
+        <image src="{{item}}" height="150" class="slide-img"/>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="inline-block ml10 mb16 mt10">
+    <text>是否自动切换：</text>
+    <switch bindchange="bindAuto" checked="{{autoplay}}" type="checkbox"></switch>
+  </view>
+  <view class="inline-block ml10 mb16 mt10">
+    <text>是否显示面板指示点：</text>
+    <switch bindchange="bindShowDots" checked="{{indicatorDots}}" type="checkbox"></switch>
+  </view>
+  <view class="mb16 mt10 ml10">
+    <text>设置自动切换时间间隔：</text>
+    <slider show-value min="1000" max="4000" value="{{interval}}" bindchange="bindInterval"/>
+  </view>
+  <view class="mb16 mt10 ml10">
+    <text>设置滑动动画时长：</text>
+    <slider show-value min="500" max="1500" value="{{duration}}" bindchange="bindDuration"/>
+  </view>
+</view>
+

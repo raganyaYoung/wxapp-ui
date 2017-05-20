@@ -1,7 +1,4 @@
 /**index.wxss**/
-@import '../../utils/common.wxss';
-@import '../../utils/util.wxss';
-
 .container {
   height: 100%;
   padding: 200rpx 0;

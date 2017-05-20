@@ -1,2 +1,46 @@
 <!--pages/form/form.wxml-->
-<text>pages/form/form.wxml</text>
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>表单</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="ml10 mb20 mt10">
+    <view class="mb10">switch</view>
+    <switch></switch>
+    <switch type="checkbox"></switch>
+  </view>
+
+  <view class="mb20 mt10 ml10">
+    <view class="mb10">slider</view>
+    <slider show-value min="1000" max="4000"/>
+  </view>
+
+  <view class="mb20 mt10">
+    <view class="mb10 ml10">input</view>
+    <input placeholder="please input here" />
+  </view>
+
+  <view class="mb20 mt10 ml10">
+    <view class="mb10">radio</view>
+    <radio />
+  </view>
+
+  <view class="mb20 mt10 ml10">
+    <view class="mb10">checkbox</view>
+    <checkbox />
+  </view>
+
+  <view class="mb20 mt10">
+    <view class="mb10 ml10">textarea</view>
+    <textarea placeholder="please write here"></textarea>
+  </view>
+
+  <view class="mb20 mt10 ml10">
+    <view class="mb10">button</view>
+    <button size="mini">mini</button>
+  </view>
+
+</view>
+
+

@@ -1,1 +1,13 @@
 /* pages/form/form.wxss */
+input {
+  width: 100%;
+  /*text-align:center;*/
+  background: #fff;
+  padding: 10px;
+}
+
+textarea {
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+}

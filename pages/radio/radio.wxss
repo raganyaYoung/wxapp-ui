@@ -1,7 +1,4 @@
 /* pages/radio/radio.wxss */
-@import '../../utils/common.wxss'
-@import '../../utils/util.wxss'
-
 .btn-view {
   padding: 8px 10px;
   margin: 10px 0;

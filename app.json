@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/component/component",
+    "pages/form/form",
+    "pages/swiper/swiper",
     "pages/pickerView/pickerView",
     "pages/picker/picker",
     "pages/textarea/textarea",
@@ -8,7 +10,6 @@
     "pages/scrollView/scrollView",
     "pages/checkbox/checkbox",
     "pages/radio/radio",
-    "pages/form/form",
     "pages/button/button",
     "pages/progress/progress",
     "pages/index/index",

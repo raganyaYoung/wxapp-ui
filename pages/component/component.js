@@ -15,8 +15,9 @@ Page({
         url: '../scrollView/scrollView'
       }, {
         left: 'swiper',
-        right: '滑块视图容器',
+        right: '轮播',
         noIcon: true,
+        url: '../swiper/swiper'
       }]
     }, {
       title: '基础内容',
@@ -72,25 +73,10 @@ Page({
         noIcon: true,
         url: '../pickerView/pickerView'
       }, {
-        left: 'slider',
-        right: '滑动选择器',
-        noIcon: true,
-      }, {
-        left: 'switch',
-        right: '开关选择器',
-        noIcon: true,
-      }, {
         left: 'form',
         right: '表单',
         noIcon: true,
         url: '../form/form'
-      }]
-    }, {
-      title: '导航',
-      items: [{
-        left: 'navigator',
-        right: '图标',
-        noIcon: true,
       }]
     }, {
       title: '媒体组件',
