@@ -1,6 +1,12 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/component/component",
+    "pages/contactButton/contactButton",
+    "pages/canvas/canvas",
+    "pages/map/map",
+    "pages/video/video",
+    "pages/audio/audio",
     "pages/form/form",
     "pages/swiper/swiper",
     "pages/pickerView/pickerView",
@@ -12,7 +18,6 @@
     "pages/radio/radio",
     "pages/button/button",
     "pages/progress/progress",
-    "pages/index/index",
     "pages/logs/logs",
     "pages/icon/icon"
   ],

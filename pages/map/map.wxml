@@ -1,0 +1,28 @@
+<!--pages/map/map.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>地图</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：地图组件的经纬度必填, 如果不填经纬度则默认值是北京的经纬度。。
+    </view>
+  </view>
+
+  <view class="demo-view">
+    <!-- <map
+      style="width: 100%; height: 300px;"
+      id="myMap" longitude="113.324520" latitude="23.099994"
+      show-location
+    ></map> -->
+    <map id="myMmap" longitude="113.324520" latitude="23.099994"
+      scale="14" controls="{{controls}}"
+      bindcontroltap="controltap"
+      markers="{{markers}}"
+      bindmarkertap="markertap"
+      polyline="{{polyline}}"
+      bindregionchange="regionchange"
+      show-location
+      style="width: 100%; height: 300px;"
+    ></map>
+  </view>
+</view>

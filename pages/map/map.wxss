@@ -1,0 +1,5 @@
+/* pages/map/map.wxss */
+.demo-view {
+  display: flex;
+  justify-content: center;
+}

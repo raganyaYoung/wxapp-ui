@@ -1,0 +1,3 @@
+/* pages/video/video.wxss */
+@import '../button/button.wxss';
+@import '../input/input.wxss';

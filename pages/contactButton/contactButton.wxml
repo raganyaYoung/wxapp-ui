@@ -1,0 +1,15 @@
+<!--pages/contactButton/contactButton.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>客服回话</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">
+      说明：客服会话按钮，用于在页面上显示一个客服会话按钮，用户点击该按钮后会进入客服会话。
+    </view>
+  </view>
+
+  <view class="demo-view">
+    <contact-button session-from="weapp"></contact-button>
+  </view>
+</view>
+

@@ -84,14 +84,12 @@ Page({
         left: 'audio',
         right: '音频',
         noIcon: true,
+        url: '../audio/audio'
       }, {
         left: 'video',
         right: '视频',
         noIcon: true,
-      }, {
-        left: 'image',
-        right: '图片',
-        noIcon: true,
+        url: '../video/video'
       }]
     }, {
       title: '地图',
@@ -99,6 +97,7 @@ Page({
         left: 'map',
         right: '地图',
         noIcon: true,
+        url: '../map/map'
       }]
     }, {
       title: '画布',
@@ -106,6 +105,7 @@ Page({
         left: 'canvas',
         right: '画布',
         noIcon: true,
+        url: '../canvas/canvas'
       }]
     }, {
       title: '客服回话',
@@ -113,6 +113,7 @@ Page({
         left: 'contact-button',
         right: '客服回话',
         noIcon: true,
+        url: '../contactButton/contactButton'
       }]
     }],
 
