@@ -1,5 +1,10 @@
 {
   "pages":[
+    "pages/adComponent/adComponent",
+    "pages/floatInput/floatInput",
+    "pages/input/input",
+    "pages/defaultInput/defaultInput",
+    "pages/adInput/adInput",
     "pages/index/index",
     "pages/component/component",
     "pages/contactButton/contactButton",
@@ -12,7 +17,6 @@
     "pages/pickerView/pickerView",
     "pages/picker/picker",
     "pages/textarea/textarea",
-    "pages/input/input",
     "pages/scrollView/scrollView",
     "pages/checkbox/checkbox",
     "pages/radio/radio",
@@ -26,7 +30,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小程序组件",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#fff"
+    "backgroundColor": "#f5f5f5"
   },
   "tabBar": {
     "color": "black",
@@ -40,14 +44,14 @@
       "selectedIconPath": "images/home-active.png"
     }, {
       "pagePath": "pages/component/component",
-      "text": "组件",
+      "text": "基础组件",
+      "iconPath": "images/component.png",
+      "selectedIconPath": "images/component-active.png"
+    }, {
+      "pagePath": "pages/adComponent/adComponent",
+      "text": "封装组件",
       "iconPath": "images/setting.png",
       "selectedIconPath": "images/setting-active.png"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "关于",
-      "iconPath": "images/my.png",
-      "selectedIconPath": "images/my-active.png"
     }]
   }
 }

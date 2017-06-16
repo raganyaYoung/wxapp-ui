@@ -1,0 +1,26 @@
+/* pages/floatInput/floatInput.wxss */
+.input-item {
+  padding: 12px 0 11px 10px;
+}
+.label {
+  display: block;
+  width: 80px;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  vertical-align: middle;
+  /*font-size: 16px;*/
+}
+.content {
+  display:inline-block;
+  font-size:14px;
+  vertical-align: middle;
+  width: 90%;
+}
+.btn-view button {
+  background:#4a90e2;
+  font-size:14px;
+  color:#fff;
+  margin-top:10px;
+  margin-bottom: 10px;
+  width:94%;
+}

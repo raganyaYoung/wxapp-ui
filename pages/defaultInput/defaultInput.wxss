@@ -1,0 +1,27 @@
+/* pages/defaultInput/defaultInput.wxss */
+form {
+  margin: 10px 0;
+}
+.input-item {
+  padding: 12px 0 11px 10px;
+}
+.label {
+  display: inline-block;
+  width: 80px;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  vertical-align: middle;
+}
+.content {
+  display:inline-block;
+  font-size:14px;
+  vertical-align: middle;
+}
+.btn-view button {
+  background:#4a90e2;
+  font-size:14px;
+  color:#fff;
+  margin-top:10px;
+  margin-bottom: 10px;
+  width:94%;
+}

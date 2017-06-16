@@ -1,4 +1,7 @@
 /* pages/input/input.wxss */
+.demo-view {
+  text-align: left;
+}
 .input-view {
   display: flex;
   justify-content: flex-start;

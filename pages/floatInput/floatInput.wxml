@@ -1,0 +1,51 @@
+<!--pages/floatInput/floatInput.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>悬浮标签效果</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <text class="ml10 mb10 inline-block">输入文字试试：</text>
+
+  <block wx:for="{{contents}}" wx:for-index="k" wx:for-item="v" wx:key='{{"inputItem" + k}}'>
+    <template is="floatInput" data="{{ item: v, k, len: contents.length }}"></template>
+  </block>
+
+</view>
+
+<!--
+  带标签input 模板
+  item: input 属性
+  k: input 序号 单个为0 必填
+  len: 文本框个数 单个为1 必填
+
+  item.label: 左边的文字标签 非必填
+  item.name: 非必填
+  item.inputType: 指定文本框（ text & number & idcard & digit ），默认text
+  item.placeholder
+  item.password: 是否输入密码 默认false
+  item.disabled: 是否可用 默认false
+  item.maxlength: 控制最大长度  默认最长为140
+  item.change: 输入事件的函数名, 必填, e.detail.value获值
+  item.value: 绑定value & 回填value
+-->
+<template name="floatInput">
+  <view class='{{ (k === len-1 ? "" : "wx-border-bottom") + " input-item deep-gray-font bg-white"}}'>
+    <!-- 左边文字 -->
+    <view hidden='{{ !item.value.length }}' class='{{ item.label ? "label" : "" }}'>{{item.label}}</view>
+
+    <!-- 右边input -->
+    <view class="content">
+      <input
+        type='{{ item.inputType || "text" }}'
+        placeholder='{{ item.placeholder || "" }}'
+        password='{{ item.password || false }}'
+        disabled='{{ item.disabled || false }}'
+        maxlength='{{ item.maxlength || 140 }}'
+        bindinput='{{ item.change }}'
+        value="{{ item.value }}"
+        name="{{ item.name }}"
+      />
+    </view>
+  </view>
+</template>

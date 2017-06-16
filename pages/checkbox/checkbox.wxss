@@ -1,1 +1,4 @@
 /* pages/checkbox/checkbox.wxss */
+.demo-view {
+  text-align: left;
+}
