@@ -1,2 +1,35 @@
 <!--pages/checkGroup/checkGroup.wxml-->
-<text>pages/checkGroup/checkGroup.wxml</text>
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>复选框</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <text class="ml10 mb10 inline-block">选择感兴趣的板块：</text>
+  <template is="checkboxGroup" data="{{ items, checkedIds, handleCheck: 'handleCheck' }}"></template>
+</view>
+
+<!--
+  items: 选项卡  必填
+  checkedIds：选中的id 必填
+  handleCheck: 选择事件
+ -->
+<template name="checkboxGroup">
+  <view class="checkbox-group bg-white">
+    <block wx:for="{{items}}" wx:key='{{"item-" + index}}'>
+      <view
+        class='{{ (index === items.length-1 ? "" : "wx-border-bottom") + " checkbox-item"}}'
+        bindtap="{{handleCheck}}" id="{{item.id}}"
+      >
+        <text>{{item.value}}</text>
+        <!--
+          仿写的checkbox
+          因为又嵌套了一次循环 倘若数量庞大的话 性能会很差
+        -->
+        <block wx:for="{{checkedIds}}" wx:key='{{"check"+index}}' wx:for-index="k" wx:for-item="v">
+          <icon type="success_no_circle" color="#4a90e2" size="14" hidden="{{item.id != v}}"></icon>
+        </block>
+      </view>
+    </block>
+  </view>
+</template>

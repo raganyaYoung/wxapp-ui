@@ -1,1 +1,14 @@
 /* pages/checkGroup/checkGroup.wxss */
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+  padding: 10px;
+}
+.checkbox-item icon {
+  margin-right: 6px;
+}
+.wx-border-bottom::after {
+  left: 10px;
+}

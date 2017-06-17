@@ -5,62 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    items: [{
+      id: 1,
+      value: '减肥'
+    }, {
+      id: 2,
+      value: '游戏'
+    }, {
+      id: 3,
+      value: '搞笑'
+    }, {
+      id: 4,
+      value: '攀岩'
+    }, {
+      id: 5,
+      value: '科技'
+    }],
+    checkedIds: [],
   },
+  handleCheck: function(e) {
+    let value = e.currentTarget.id;
+    let index = this.data.checkedIds.indexOf(value)
+    if(value && index === -1) {
+      this.data.checkedIds.push(value)
+      this.setData({
+        checkedIds: this.data.checkedIds
+      })
+    }else if(value && index !== -1) {
+      this.data.checkedIds.splice(index, 1)
+      this.setData({
+        checkedIds: this.data.checkedIds
+      })
+    }
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+    //do sth with this.data.checkedIds
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })
