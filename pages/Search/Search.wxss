@@ -1,0 +1,35 @@
+/* pages/Search/Search.wxss */
+.search {
+  display: flex;
+  position:relative;
+  top:0;
+  z-index:9;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  align-items:center;
+}
+.search .wrapper {
+  display: flex;
+  flex: 1 0;
+  border-radius: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  background: #eee;
+  align-items: center;
+  margin: 8px 0 8px 8px;
+}
+.search icon {
+  margin-right: 6px;
+}
+.search input {
+  display: inline-block;
+  width: 100%;
+}
+.search button {
+  color: #4a90e2;
+  background: none;
+}
+.search button::after {
+  border: none;
+}

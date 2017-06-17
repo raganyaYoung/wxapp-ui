@@ -11,7 +11,7 @@ Page({
         left: 'Search',
         right: '搜索框',
         noIcon: true,
-        url: '../scrollView/scrollView'
+        url: '../Search/Search'
       }, {
         left: 'Radio',
         right: '单选框',

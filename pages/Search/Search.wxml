@@ -1,0 +1,30 @@
+<!--pages/Search/Search.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <template is="searchBox" data="{{ ...search, keywords }}"></template>
+<!--
+  <view class="component-title">
+    <text>搜索框</text>
+    <view class="cut-line"></view>
+  </view> -->
+</view>
+
+<!--
+  placeholder: 占位内容  默认为'输入关键字'
+  handleCancel: 绑定取消事件 必填
+  handleInput: 输入框 必填
+  handleSearch: 点击icon搜索事件 必填
+  keywords: 输入的内容 必填
+ -->
+<template name="searchBox">
+  <view class="search wx-border-top">
+    <view class="wrapper">
+      <icon type="search" size="12" color="#aaaaaa" bindtap="handleSearch"></icon>
+      <input
+        placeholder="{{placeholer || '输入关键字'}}"
+        value="{{keywords}}"
+        bindblur="handleInput"
+      />
+    </view>
+    <button size="mini" bindtap="handleCancel">取消</button>
+  </view>
+</template>
