@@ -1,0 +1,72 @@
+<!--pages/Dialog/Dialog.wxml-->
+<import src="../../utils/listItem.wxml"/>
+
+<view>
+  <view class="wrapper f14" style="box-sizing: border-box;">
+    <view class="item-lists list-group mt10">
+      <block wx:for="{{items}}" wx:for-index="k" wx:for-item="v" wx:key='{{"uiItem" + k}}'>
+        <template is="itemList" data="{{v}}"></template>
+      </block>
+    </view>
+  </view>
+
+  <!-- Alert -->
+  <template
+    is="alert"
+    data='{{...alertMsg, handleCancel: "bindAlertClear"}}'
+    wx:if="{{!alertHidden}}"
+  >
+  </template>
+
+  <!-- Confirm -->
+  <template
+    is="confirm"
+    data='{{...confirmMsg, handleCancel: "bindConfirmClear", handleConfirm: "bindConfirm"}}'
+    wx:if="{{!confirmHidden}}"
+  >
+  </template>
+
+  <view class="mask visible active" hidden="{{maskHidden}}"></view>
+</view>
+
+<!--
+  Alert
+  title: 默认’提示‘
+  content: 弹框内容 required
+  btnName: 按钮名 默认’确定‘
+  handleCancel: 点击确定 结束弹框事件 required
+ -->
+<template name="alert">
+  <view class="popup">
+    <view class="popup-head wx-border-bottom">
+      <text>{{ title || "提示" }}</text>
+    </view>
+    <view class="popup-body">{{ content }}</view>
+    <view class="popup-buttons">
+      <button size="mini" class="alert-button" bindtap="{{ handleCancel }}">{{ btnName || "确定" }}</button>
+    </view>
+  </view>
+</template>
+
+<!--
+  Confirm
+  title: 默认’提示‘
+  content: 弹框内容 required
+  lbtnName: 左按钮名 默认’取消‘
+  rbtnName: 右按钮名 默认’确定‘
+
+  handleCancel: 点击取消 结束弹框事件 required
+  handleConfirm: 点击确定 结束弹框事件 required
+ -->
+<template name="confirm">
+  <view class="popup">
+    <view class="popup-head wx-border-bottom">
+      <text>{{ title || "提示" }}</text>
+    </view>
+    <view class="popup-body">{{ content }}</view>
+    <view class="popup-buttons">
+      <button size="mini" class="confirm-lbutton" bindtap="{{ handleCancel }}">{{lbtnName || "取消"}}</button>
+      <button size="mini" class="confirm-rbutton" bindtap="{{ handleConfirm }}">{{lbtnName || "确定"}}</button>
+    </view>
+  </view>
+</template>

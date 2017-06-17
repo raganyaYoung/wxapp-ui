@@ -31,17 +31,17 @@ Page({
         left: 'Dialog',
         right: '对话框',
         noIcon: true,
-        url: '../checkbox/checkbox'
+        url: '../Dialog/Dialog'
       }, {
         left: 'Toast',
         right: '文字提示',
         noIcon: true,
-        url: '../checkbox/checkbox'
+        url: '../Toast/Toast'
       }, {
         left: 'Loading',
         right: '加载提示',
         noIcon: true,
-        url: '../checkbox/checkbox'
+        url: '../Loading/Loading'
       }]
     }, {
       title: '布局',

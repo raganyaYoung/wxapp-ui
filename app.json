@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/Badge/Badge",
+    "pages/Dialog/Dialog",
     "pages/adComponent/adComponent",
+    "pages/Badge/Badge",
     "pages/checkGroup/checkGroup",
     "pages/radioGroup/radioGroup",
     "pages/Search/Search",

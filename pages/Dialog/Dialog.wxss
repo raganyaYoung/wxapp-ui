@@ -1,0 +1,61 @@
+/* pages/Dialog/Dialog.wxss */
+.popup {
+  color: #484746;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 240px;
+  background: hsla(0,0%,100%,.9);
+  border-radius: 4px;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  animation-timing-function: ease-in-out;
+  animation-duration: .3s;
+  word-wrap: break-word;
+  margin: 0 auto;
+  z-index: 12;
+  word-wrap:break-word;
+  position:absolute;
+  left:0;
+  right:0;
+}
+.popup-head {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.popup-body {
+  padding: 10px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.popup-buttons {
+  padding: 10px;
+  display: flex;
+}
+.popup-buttons .alert-button::after {
+  border: none;
+}
+.popup-buttons .alert-button {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 2px;
+}
+.popup-buttons .confirm-lbutton {
+  background: none;
+  width: 46%;
+}
+.popup-buttons .confirm-lbutton::after {
+  /*border-radius: 2px;*/
+}
+.popup-buttons .confirm-rbutton {
+  width:46%;
+  background:#ea5a49;
+  color:#fff;
+  /*border-radius: 2px;*/
+}
+.popup-buttons .confirm-rbutton::after {
+  border: none;
+}
