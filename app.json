@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/radioGroup/radioGroup",
+    "pages/checkGroup/checkGroup",
     "pages/adComponent/adComponent",
+    "pages/radioGroup/radioGroup",
     "pages/Search/Search",
     "pages/floatInput/floatInput",
     "pages/input/input",

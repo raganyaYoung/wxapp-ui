@@ -1,2 +1,29 @@
 <!--pages/radioGroup/radioGroup.wxml-->
-<text>pages/radioGroup/radioGroup.wxml</text>
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>单选框</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <text class="ml10 mb10 inline-block">选择城市：</text>
+  <template is="radioGroup" data="{{ items, checkedId, handleCheck: 'handleCheck' }}"></template>
+</view>
+
+<!--
+  items: 选项卡  必填
+  checkedId：选中的id 必填
+  handleCheck: 选择事件
+ -->
+<template name="radioGroup">
+  <view class="radio-group bg-white">
+    <block wx:for="{{items}}" wx:key='{{"radioItem-" + index}}'>
+      <view
+        class='{{ (index === items.length-1 ? "" : "wx-border-bottom") + " radio-item"}}'
+        bindtap="{{handleCheck}}" id="{{item.id}}"
+      >
+        <icon type="success" color='{{item.id == checkedId ? "rgb(234, 90, 73)" : "#ddd"}}' size="14"></icon>
+        <text>{{item.value}}</text>
+      </view>
+    </block>
+  </view>
+</template>

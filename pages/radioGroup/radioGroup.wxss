@@ -1,1 +1,13 @@
 /* pages/radioGroup/radioGroup.wxss */
+.radio-item {
+  display: flex;
+  align-items: center;
+  color: #444;
+  padding: 10px;
+}
+.radio-item icon {
+  margin-right: 6px;
+}
+.wx-border-bottom::after {
+  left: 10px;
+}

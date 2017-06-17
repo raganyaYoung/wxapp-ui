@@ -16,7 +16,7 @@ Page({
         left: 'Radio',
         right: '单选框',
         noIcon: true,
-        url: '../swiper/swiper'
+        url: '../radioGroup/radioGroup'
       }, {
         left: 'Checkbox',
         right: '多选框',
