@@ -1,0 +1,21 @@
+<!--pages/Badge/Badge.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>徽章</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <block wx:for="{{[2, 50, 99]}}">
+    <template is="badge" data="{{item}}"></template>
+  </block>
+</view>
+
+<!--
+  item 徽章内容 必填
+ -->
+<template name="badge">
+  <text class="badge">
+    <text class="badge-num">{{item}}</text>
+  </text>
+</template>
+

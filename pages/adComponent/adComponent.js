@@ -21,12 +21,12 @@ Page({
         left: 'Checkbox',
         right: '多选框',
         noIcon: true,
-        url: '../checkbox/checkbox'
+        url: '../checkGroup/checkGroup'
       }, {
         left: 'Badge',
         right: '徽章',
         noIcon: true,
-        url: '../checkbox/checkbox'
+        url: '../Badge/Badge'
       }, {
         left: 'Dialog',
         right: '对话框',
