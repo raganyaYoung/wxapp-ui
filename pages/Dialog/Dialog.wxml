@@ -26,6 +26,21 @@
   >
   </template>
 
+  <!-- ios alert -->
+  <template
+    is="iOSAlert"
+    data='{{...alertIOSMsg, handleCancel: "handleIOSCancel"}}'
+    wx:if="{{!alertIOSHidden}}"
+  ></template>
+
+  <!-- ios confirm -->
+  <template
+    is="iOSConfirm"
+    data='{{...confirmMsg, handleCancel: "bindIOSConfirmClear", handleConfirm: "bindIOSConfirm"}}'
+    wx:if="{{!confirmIOSHidden}}"
+  >
+  </template>
+
   <view class="mask visible active" hidden="{{maskHidden}}"></view>
 </view>
 
@@ -70,3 +85,44 @@
     </view>
   </view>
 </template>
+
+<!--
+  iOSAlert
+  title: 默认’提示‘
+  content: 弹框内容 required
+  btnName: 按钮名 默认’好‘
+  handleCancel: 点击确定 结束弹框事件 required
+ -->
+<template name="iOSAlert">
+  <view class="popup ios">
+    <view class="popup-head ios-head">
+      <text>{{ title || "提示" }}</text>
+    </view>
+    <view class="popup-body ios-body">{{ content }}</view>
+    <view class="popup-buttons wx-border-top" bindtap="{{ handleCancel }}">
+      <text class="ios-btn">{{ btnName || "好" }}</text>
+    </view>
+  </view>
+</template>
+
+<!--
+  iOSAlert
+  content: 弹框内容 required
+  lbtnName: 左按钮名 默认’取消‘
+  rbtnName: 右按钮名 默认’确定‘
+
+  handleCancel: 点击取消 结束弹框事件 required
+  handleConfirm: 点击确定 结束弹框事件 required
+ -->
+<template name="iOSConfirm">
+  <view class="popup ios">
+    <view class="popup-head ios-head" style="margin-bottom: 22px;margin-top: 20px;">
+      <text>{{ content }}</text>
+    </view>
+    <view class="ios-buttons wx-border-top" bindtap="{{ handleCancel }}">
+      <view class="l-btn">{{ lbtnName || "取消" }}</view>
+      <view class="r-btn">{{ rbtnName || "确定" }}</view>
+    </view>
+  </view>
+</template>
+

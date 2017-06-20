@@ -198,3 +198,40 @@
 /**
  * background end
  */
+
+/**
+ * 分割线
+ */
+.fgx{
+  position: relative;
+}
+.fgx:after{
+  border-right: 1px solid #ccc;
+  content: ' ';
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.fgx:before {
+  top: 0;
+}
+.fgx:after {
+  bottom: 0;
+}
+@media (-webkit-min-device-pixel-ratio:1.5), (min-device-pixel-ratio: 1.5) {
+  .fgx::after, .fgx::before{
+    -webkit-transform: scaleY(.8);
+    -webkit-transform-origin: 0 0;
+    transform: scaleY(.8);
+  }
+  .fgx:after,.fgx:after {
+    -webkit-transform-origin: left bottom;
+  }
+}
+@media (-webkit-min-device-pixel-ratio:2), (min-device-pixel-ratio: 2){
+  .fgx::after, .fgx::before  {
+    -webkit-transform: scaleY(.3);
+    transform: scaleY(.3);
+  }
+}

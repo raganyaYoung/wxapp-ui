@@ -33,11 +33,18 @@ Page({
     },
     alertHidden: true,
 
+    alertIOSMsg: {
+      title: '无法打开网页',
+      content: 'Safari打不开网页，因为网址无效。'
+    },
+    alertIOSHidden: true,
+
     confirmMsg: {
       content: '在微信中打开连接吗',
-      bindConfirmClear: 'bindConfirmClear'
     },
     confirmHidden: true,
+
+    confirmIOSHidden: true,
   },
   getComponentDetail: function(e) {
     let url = e.currentTarget.dataset.url
@@ -55,7 +62,17 @@ Page({
       case 'Confirm':
         this.setData({
           confirmHidden: false
-        })
+        });
+        break;
+      case 'iOSAlert':
+        this.setData({
+          alertIOSHidden: false
+        });
+        break;
+      case 'iOSConfirm':
+        this.setData({
+          confirmIOSHidden: false
+        });
         break;
     }
   },
@@ -75,6 +92,25 @@ Page({
     this.setData({
       maskHidden: true,
       confirmHidden: true,
+    })
+    //do sth confirmed
+  },
+  handleIOSCancel: function() {
+    this.setData({
+      maskHidden: true,
+      alertIOSHidden: true,
+    })
+  },
+  bindIOSConfirmClear: function() {
+    this.setData({
+      maskHidden: true,
+      confirmIOSHidden: true,
+    })
+  },
+  bindIOSConfirm: function() {
+    this.setData({
+      maskHidden: true,
+      confirmIOSHidden: true,
     })
     //do sth confirmed
   },
