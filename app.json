@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/Toast/Toast",
     "pages/adComponent/adComponent",
     "pages/Dialog/Dialog",
     "pages/Badge/Badge",

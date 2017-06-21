@@ -1,0 +1,23 @@
+<!--pages/Toast/Toast.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>文字提示</text>
+    <view class="cut-line"></view>
+  </view>
+  <view>
+    <view class="ml10">
+      <button bindtap="handleToast" size="mini">点击文字提示</button>
+    </view>
+
+    <template is="toast" data="{{content: content}}" wx:if="{{toastShow}}"></template>
+  </view>
+</view>
+
+<!--
+  content 提示内容
+ -->
+<template name="toast">
+  <view class="toast">
+    <text>{{content}}</text>
+  </view>
+</template>
