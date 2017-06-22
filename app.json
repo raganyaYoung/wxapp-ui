@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/Toast/Toast",
     "pages/adComponent/adComponent",
+    "pages/Loading/Loading",
+    "pages/Toast/Toast",
     "pages/Dialog/Dialog",
     "pages/Badge/Badge",
     "pages/checkGroup/checkGroup",

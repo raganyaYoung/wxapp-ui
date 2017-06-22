@@ -1,0 +1,34 @@
+<!--pages/Loading/Loading.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>加载提示</text>
+    <view class="cut-line"></view>
+  </view>
+  <view>
+    <view class="ml10">
+      <button bindtap="handleLoading" size="mini">点击加载提示</button>
+    </view>
+
+    <template is="loading" wx:if="{{loadingShow}}"></template>
+  </view>
+</view>
+
+<!--
+  content 提示内容
+ -->
+<template name="loading">
+  <view class="loading">
+    <view class="content">
+      <!-- <view class="spinner">
+        <view class="bounce1"></view>
+        <view class="bounce2"></view>
+        <view class="bounce3"></view>
+      </view> -->
+      <view class="spinner">
+        <view class="double-bounce1"></view>
+        <view class="double-bounce2"></view>
+      </view>
+      <text>{{content || '加载中'}}</text>
+    </view>
+  </view>
+</template>
