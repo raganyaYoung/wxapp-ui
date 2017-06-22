@@ -79,6 +79,11 @@ Page({
     }, {
       title: '高级',
       items: [{
+        left: 'Rate',
+        right: '星级评分',
+        noIcon: true,
+        url: '../Rate/Rate'
+      }, {
         left: 'Scroll',
         right: '下拉刷新，无限加载',
         noIcon: true,

@@ -1,0 +1,63 @@
+<!--pages/Rate/Rate.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>星级评分</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="mt20">
+    <template is="rate"
+      data="{{checkedRate, handleStar: 'handleStar', handleComment: 'handleComment', handleSubmit: 'handleSubmit'}}"
+    ></template>
+  </view>
+
+</view>
+
+
+<!--
+  星星评分模板
+  checkedRate: 选中的评分 required
+  handleStar: 点击星星事件  得到评分 required
+  handleComment: 文字评分事件 required
+  handleSubmit: 提交评分事件 required
+ -->
+<template name="rate">
+  <view class="rate">
+    <view class="checked-rate" wx:if="{{checkedRate}}">
+      <text>{{checkedRate}}</text>分
+    </view>
+    <text class="rate-desc mt10 mb10">{{['请点击星星评分', '超烂啊', '比较差', '一般般', '比较好', '完美'][checkedRate]}}</text>
+    <template is="rateStar" data="{{handleStar, checkedRate}}"></template>
+
+    <view class="comment mt10">
+      <textarea
+        placeholder="来说说你的看法吧（6-300个字）"
+        maxlength="300"
+        bindinput="handleComment"
+      ></textarea>
+    </view>
+
+    <button class="submit" bindtap="handleSubmit">提交</button>
+  </view>
+</template>
+
+
+<!--
+  星星template
+  rates: 星星分数数组，也可以代表星星个数， 默认[1,2,3,4,5]
+  handleStar: 点击星星事件  得到评分 required
+  checkedRate: 选中的评分 required
+  starActivePath & starPath: 星星图片地址
+ -->
+<template name="rateStar">
+  <view class="rate-star">
+    <block wx:for="{{rates || [1,2,3,4,5]}}" wx:key='{{"star-"+index}}'>
+      <image
+        src='{{ (checkedRate && item <= checkedRate) ? (starActivePath || "../../images/star-active.png") : (starPath || "../../images/star.png") }}'
+        id="{{item}}"
+        class="rate-star-icon"
+        bindtap="{{handleStar}}"
+      ></image>
+    </block>
+  </view>
+</template>
