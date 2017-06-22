@@ -26,7 +26,7 @@
     <view class="checked-rate" wx:if="{{checkedRate}}">
       <text>{{checkedRate}}</text>分
     </view>
-    <text class="rate-desc mt10 mb10">{{['请点击星星评分', '超烂啊', '比较差', '一般般', '比较好', '完美'][checkedRate]}}</text>
+    <text class="rate-desc mb10">{{['请点击星星评分', '超烂啊', '比较差', '一般般', '比较好', '完美'][checkedRate]}}</text>
     <template is="rateStar" data="{{handleStar, checkedRate}}"></template>
 
     <view class="comment mt10">
@@ -47,7 +47,7 @@
   rates: 星星分数数组，也可以代表星星个数， 默认[1,2,3,4,5]
   handleStar: 点击星星事件  得到评分 required
   checkedRate: 选中的评分 required
-  starActivePath & starPath: 星星图片地址
+  starActivePath & starPath: icon图片地址 这里是五角星 也可换成爱心图片地址。。。
  -->
 <template name="rateStar">
   <view class="rate-star">

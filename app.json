@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/Rate/Rate",
     "pages/adComponent/adComponent",
+    "pages/Rate/Rate",
     "pages/Loading/Loading",
     "pages/Toast/Toast",
     "pages/Dialog/Dialog",
@@ -61,5 +61,6 @@
       "iconPath": "images/setting.png",
       "selectedIconPath": "images/setting-active.png"
     }]
-  }
+  },
+  "debug": true
 }
