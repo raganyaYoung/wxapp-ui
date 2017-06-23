@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/adComponent/adComponent",
+    "pages/List/List",
     "pages/Rate/Rate",
     "pages/Loading/Loading",
     "pages/Toast/Toast",

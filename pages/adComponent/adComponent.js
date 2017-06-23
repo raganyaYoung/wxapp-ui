@@ -46,15 +46,10 @@ Page({
     }, {
       title: '布局',
       items: [{
-        left: 'Header',
-        right: '页头',
-        noIcon: true,
-        url: '../icon/icon'
-      }, {
         left: 'List',
         right: '列表',
         noIcon: true,
-        url: ''
+        url: '../List/List'
       }, {
         left: 'Cells',
         right: '宫格',

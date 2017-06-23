@@ -1,0 +1,81 @@
+<!--pages/List/List.wxml-->
+<view class="f14 deep-gray-font border-content">
+  <view class="component-title">
+    <text>列表</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="mt20">
+    <template is="list" data="{{listConfig: listConfig }}"></template>
+  </view>
+
+  <view class="mt20">
+    <template is="list" data="{{listConfig: listItem}}"></template>
+  </view>
+
+</view>
+
+<!-- template的样式在List.wxss中，没有用公共样式util.wxss&common.wxss -->
+<!--
+  带有标题的列表
+  listConfig array 列表的配置项 required
+  list.title 列表自带标题
+  list.items array 每个列表项的配置项 required
+  list.iosStyle: Boolean true->列表最外层没有边框
+
+  list.handleListItem 点击列表跳转事件 函数名
+ -->
+<template name="list">
+  <view class="list" wx:for="{{listConfig}}" wx:key='{{"title" + index}}' wx:for-item="list">
+    <view class="list-title" wx:if="{{list.title}}">{{list.title}}</view>
+
+    <view class='{{(list.iosStyle ? "" : "wx-border-vertical") + " list-items"}}'>
+      <block wx:for="{{list.items}}" wx:for-index="k" wx:key='{{"uiItem" + k}}'>
+        <template
+          is="listItem"
+          data="{{items: list.items, item, handleListItem: list.handleListItem, iosStyle: list.iosStyle, index: k}}"
+        ></template>
+      </block>
+    </view>
+
+  </view>
+</template>
+
+<!--
+  list 每项列表
+
+  item: 每项列表的配置 required
+
+  item.url: 该列表项的链接
+  item.arrowIcon: Boolean 是否显示右箭头icon 表示该列表项可点击可跳转
+
+  item.rightIcon: 右侧图表src
+  item.leftIcon: 左侧图标src
+
+  item.itemTitle: 列表项左侧项标题 required
+  item.itemNote: 列表项右侧项说明
+
+  item.handleListItem: 点击列表跳转事件 若没有item.url, 则点击无效
+ -->
+<template name="listItem">
+  <view class='{{ (iosStyle && index==items.length-1) ? "list-item" : "wx-border-bottom list-item"}}'
+    hover="{{true}}"
+    hover-class="list-item-active"
+    data-url="{{item.url}}"
+    bindtap="{{item.url ? handleListItem : ''}}"
+  >
+    <view class="item-left">
+      <image class="icon item-left-icon" wx:if="{{item.leftIcon}}"
+        src="{{item.leftIcon}}" mode="aspectFit"></image>
+      <text class="item-title" wx:if="{{item.itemTitle}}">{{item.itemTitle}}</text>
+    </view>
+
+    <view class="item-right" >
+      <text class="item-note">{{item.itemNote}}</text>
+      <image class="icon item-right-icon" wx:if="{{item.rightIcon}}"
+      src="{{item.rightIcon}}" mode="aspectFit"></image>
+      <image class="icon item-arrow-icon" wx:if="{{item.arrowIcon}}"
+        src="../../images/right.png" mode="aspectFit"></image>
+    </view>
+  </view>
+</template>
