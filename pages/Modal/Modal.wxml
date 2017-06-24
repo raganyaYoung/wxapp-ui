@@ -1,0 +1,12 @@
+<!--pages/Modal/Modal.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>模态窗</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <view class="ml10">
+    <button bindtap="handleWxModal" size="mini">小程序自带模态窗</button>
+  </view>
+</view>
+

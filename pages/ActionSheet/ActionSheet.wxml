@@ -1,0 +1,13 @@
+<!--pages/ActionSheet/ActionSheet.wxml-->
+<view class="f14 deep-gray-font" style="box-sizing: border-box;">
+  <view class="component-title">
+    <text>操作列表</text>
+    <view class="cut-line"></view>
+    <view class="tips f12 shallow-gray-font">说明：按钮的文字数组，数组长度最大为6个</view>
+  </view>
+
+  <view class="ml10">
+    <button bindtap="handleWxActionSheet" size="mini">小程序自带操作列表</button>
+  </view>
+</view>
+

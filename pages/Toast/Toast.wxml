@@ -6,7 +6,11 @@
   </view>
   <view>
     <view class="ml10">
-      <button bindtap="handleToast" size="mini">点击文字提示</button>
+      <button bindtap="handleWxToast" size="mini">小程序自带文字提示</button>
+    </view>
+
+    <view class="ml10">
+      <button bindtap="handleToast" size="mini">自定义文字提示</button>
     </view>
 
     <template is="toast" data="{{content: content}}" wx:if="{{toastShow}}"></template>

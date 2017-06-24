@@ -55,6 +55,11 @@ Page({
         right: '选项卡',
         noIcon: true,
         url: '../Tabs/Tabs'
+      }, {
+        left: 'ActionSheet',
+        right: '操作列表',
+        noIcon: true,
+        url: '../ActionSheet/ActionSheet'
       }]
     }, {
       title: '高级',
@@ -73,6 +78,11 @@ Page({
         right: '手风琴组件',
         noIcon: true,
         url: '../Accordion/Accordion'
+      }, {
+        left: 'Modal',
+        right: '模态窗',
+        noIcon: true,
+        url: '../Modal/Modal'
       }]
     }],
 

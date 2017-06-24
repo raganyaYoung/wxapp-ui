@@ -3,6 +3,8 @@
     "pages/index/index",
     "pages/component/component",
     "pages/adComponent/adComponent",
+    "pages/ActionSheet/ActionSheet",
+    "pages/Modal/Modal",
     "pages/Scroll/Scroll",
     "pages/Accordion/Accordion",
     "pages/Tabs/Tabs",

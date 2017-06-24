@@ -18,7 +18,7 @@
   background: rgba(0,0,0,.8);
   text-align: center;
   border-radius: 5px;
-  padding: 12px;
+  padding: 30px;
   max-width:50%;
   word-wrap:break-word;
   line-height:1rem;

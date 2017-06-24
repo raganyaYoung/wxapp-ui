@@ -18,4 +18,11 @@ Page({
       toastShow: !this.data.toastShow
     })
   },
+  handleWxToast: function() {
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
 })

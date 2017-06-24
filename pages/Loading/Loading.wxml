@@ -6,7 +6,11 @@
   </view>
   <view>
     <view class="ml10">
-      <button bindtap="handleLoading" size="mini">点击加载提示</button>
+      <button bindtap="handleWxLoading" size="mini">系统加载提示</button>
+    </view>
+
+    <view class="ml10 mt10">
+      <button bindtap="handleLoading" size="mini">自定义加载提示</button>
     </view>
 
     <template is="loading" wx:if="{{loadingShow}}"></template>
