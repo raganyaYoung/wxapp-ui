@@ -51,11 +51,6 @@ Page({
         noIcon: true,
         url: '../List/List'
       }, {
-        left: 'Cells',
-        right: '宫格',
-        noIcon: true,
-        url: '../progress/progress'
-      }, {
         left: 'Tabs',
         right: '选项卡',
         noIcon: true,
@@ -63,11 +58,6 @@ Page({
       }, {
         left: 'ButtonBar',
         right: 'IOS选项卡',
-        noIcon: true,
-        url: '../progress/progress'
-      }, {
-        left: 'Scalable',
-        right: '缩放',
         noIcon: true,
         url: '../progress/progress'
       }]
@@ -93,26 +83,6 @@ Page({
         right: '手风琴组件',
         noIcon: true,
         url: '../input/input'
-      }, {
-        left: 'Popup',
-        right: '自定义弹层',
-        noIcon: true,
-        url: '../textarea/textarea'
-      }, {
-        left: 'ActionSheet',
-        right: '操作列表',
-        noIcon: true,
-        url: '../picker/picker'
-      }, {
-        left: 'Sidebar',
-        right: '侧边栏',
-        noIcon: true,
-        url: '../pickerView/pickerView'
-      }, {
-        left: 'Modal',
-        right: '模态窗',
-        noIcon: true,
-        url: '../form/form'
       }]
     }],
 

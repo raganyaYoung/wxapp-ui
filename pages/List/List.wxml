@@ -58,7 +58,7 @@
   item.handleListItem: 点击列表跳转事件 若没有item.url, 则点击无效
  -->
 <template name="listItem">
-  <view class='{{ (iosStyle && index==items.length-1) ? "list-item" : "wx-border-bottom list-item"}}'
+  <view class='{{ (iosStyle && index==items.length-1) ? "list-item" : "wx-border-bottom list-item"}} + {{iosStyle ? " border-margin" : ""}}'
     hover="{{true}}"
     hover-class="list-item-active"
     data-url="{{item.url}}"

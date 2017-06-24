@@ -45,3 +45,7 @@
 .item-arrow-icon {
   margin-right:-4px;
 }
+
+.border-margin::after {
+  left: 10px;
+}
