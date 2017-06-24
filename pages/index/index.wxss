@@ -1,4 +1,6 @@
 /**index.wxss**/
+@import "../List/List.wxss"
+
 .container {
   height: 100%;
   padding: 200rpx 0;

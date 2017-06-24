@@ -32,6 +32,9 @@
   white-space: nowrap;
   overflow: auto;
 }
+.item-note {
+  color: #aaa;
+}
 .item-right {
   justify-content:flex-end;
 }

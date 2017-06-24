@@ -54,12 +54,7 @@ Page({
         left: 'Tabs',
         right: '选项卡',
         noIcon: true,
-        url: '../progress/progress'
-      }, {
-        left: 'ButtonBar',
-        right: 'IOS选项卡',
-        noIcon: true,
-        url: '../progress/progress'
+        url: '../Tabs/Tabs'
       }]
     }, {
       title: '高级',
@@ -70,19 +65,14 @@ Page({
         url: '../Rate/Rate'
       }, {
         left: 'Scroll',
-        right: '下拉刷新，无限加载',
+        right: '下拉刷新',
         noIcon: true,
-        url: '../button/button'
-      }, {
-        left: 'Cascade',
-        right: '级联',
-        noIcon: true,
-        url: '../radio/radio'
+        url: '../Scroll/Scroll'
       }, {
         left: 'Accordion',
         right: '手风琴组件',
         noIcon: true,
-        url: '../input/input'
+        url: '../Accordion/Accordion'
       }]
     }],
 

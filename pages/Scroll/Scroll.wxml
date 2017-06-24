@@ -1,0 +1,14 @@
+<!--pages/Scroll/Scroll.wxml-->
+<view class="f14 border-content">
+  <!-- <view class="component-title">
+    <text>下拉刷新</text>
+    <view class="cut-line"></view>
+  </view> -->
+
+  <view class="scroll wx-border-top">
+    <block wx:for="{{config}}" wx:key="{{index}}">
+      <view class="scroll-item wx-border-bottom">{{index + ' - keep walking, be 2 with you.'}}</view>
+    </block>
+  </view>
+</view>
+

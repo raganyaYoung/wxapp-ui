@@ -1,0 +1,28 @@
+<!--pages/Tabs/Tabs.wxml-->
+<view class="f14 border-content">
+  <template is="TopTabs" data="{{ tabConfig, tabIndex, handleTab: 'handleTab' }}"></template>
+
+  <view class="tab-pages deep-gray-font mt10 ml10">
+    <block wx:for="{{tabConfig}}" wx:key='{{"page-"+index}}'>
+      <view hidden="{{tabIndex !== index}}" data-page="{{'page'+index}}">{{'page'+index}}</view>
+    </block>
+  </view>
+</view>
+
+<!--
+  tabs
+  tabConfig: 每项选项卡名称配置 array required e.q:['全部', '待付款', '待发货', '待收货']
+  tabIndex: 当前选中选项卡下标 默认初始选中0 第一项
+  handleTab: 点击选项卡事件 改变tabIndex
+ -->
+<template name="TopTabs">
+  <view class="tabs wx-border-top">
+    <block wx:for="{{tabConfig}}" wx:key='{{"tab-"+index}}'>
+      <view
+        class='{{ (index == tabIndex ? "tab-active" : "") + " tab-item" }}'
+        data-tab="{{index}}"
+        bindtap="{{handleTab}}"
+      >{{item}}</view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,38 @@
+/* pages/Tabs/Tabs.wxss */
+.tabs {
+  display: flex;
+  position: relative;
+  top:0;
+  z-index:9;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 39px;
+  line-height: 39px;
+  color: rgba(74,144,226,.4);
+}
+.tabs .tab-item {
+  -webkit-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  max-width: 150px;
+  height: 100%;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: -apple-system,Helvetica Neue,Roboto,Segoe UI,sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.tabs .tab-active {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}

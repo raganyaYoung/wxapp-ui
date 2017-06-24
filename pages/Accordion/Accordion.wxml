@@ -1,0 +1,66 @@
+<!--pages/Accordion/Accordion.wxml-->
+<view class="f14 border-content">
+  <view class="component-title">
+    <text>手风琴</text>
+    <view class="cut-line"></view>
+  </view>
+
+  <template is="accordion" data="{{accordionConfig, accordionIndex, handleAccordion: 'handleAccordion'}}"></template>
+
+</view>
+
+<!--
+  accordion
+  accordionConfig: 标题配置 array required ['title', 'title']
+  handleAccordion: 点击每项标题事件 required
+  accordionIndex: 当前需显示的下标 required
+  templatename: 定义name='accordionContent'+index的template index从0开始
+ -->
+<template name="accordion">
+  <view class="accordion wx-border-top">
+    <block wx:for="{{accordionConfig}}" wx:key='{{"accordion"+index}}'>
+      <view class='list-accordion wx-border-bottom'>
+        <view
+          class='{{index+1==accordionIndex ? "accordion-header wx-border-bottom" : "accordion-header"}}'
+          data-index="{{index+1}}"
+          bindtap="{{handleAccordion}}"
+        >
+          <view class="accordion-title">{{item}}</view>
+          <image
+            class='{{index+1 == accordionIndex ? "arrow-icon arrow-rotate" : "arrow-icon"}}'
+            src="../../images/arrow-full.png"
+          ></image>
+        </view>
+        <view class="accordion-content" hidden="{{ (index+1) != accordionIndex }}">
+          <template is='{{"accordionContent"+index}}'></template>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>
+
+<!--
+  accordion content template
+  这里讲手风琴中的content放在不同的模板中是为了让内容直接以html+css的形式显示，
+  而不是纯文本的形式
+ -->
+ <template name="accordionContent0">
+   <view>
+    如果有一天我能够拥有一个大果园，
+    我愿放下所有追求做个农夫去种田，
+    每一个早晨我耕耘在绿野田园，
+    每一个黄昏我守望在乡间的麦田。
+    我会把忧虑都融化在夕阳里，
+    让孤独的心等待秋收的欢喜。
+   </view>
+ </template>
+ <template name="accordionContent1">
+   <view>
+    如果有一天我能够拥有一条渔船，
+    我愿放下所有执着做个渔夫住在海边，
+    每一个早晨我航行在晨曦的海面，
+    每一个黄昏我遥望在无际的海云间。
+    我会把思绪都消失在波涛里，
+    让澎湃的心等待风雨后的平息。
+   </view>
+ </template>

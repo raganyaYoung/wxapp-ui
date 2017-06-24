@@ -1,6 +1,11 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/component/component",
     "pages/adComponent/adComponent",
+    "pages/Scroll/Scroll",
+    "pages/Accordion/Accordion",
+    "pages/Tabs/Tabs",
     "pages/List/List",
     "pages/Rate/Rate",
     "pages/Loading/Loading",
@@ -14,8 +19,6 @@
     "pages/input/input",
     "pages/defaultInput/defaultInput",
     "pages/adInput/adInput",
-    "pages/index/index",
-    "pages/component/component",
     "pages/contactButton/contactButton",
     "pages/canvas/canvas",
     "pages/map/map",
@@ -39,7 +42,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小程序组件",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#f5f5f5"
+    "backgroundColor": "#f5f5f5",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "black",

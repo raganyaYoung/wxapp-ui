@@ -1,0 +1,34 @@
+/* pages/Accordion/Accordion.wxss */
+.accordion {
+  background: #fff;
+}
+.list-accordion {
+
+}
+.accordion-header {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  color: rgb(68, 68, 68);
+}
+.accordion-title {
+
+}
+.arrow-icon {
+  width: 12px;
+  height: 7px;
+  transform: rotate(0deg);
+  tansition: all .25s cubic-bezier(.4,.6,.2,1);
+}
+.accordion-content {
+  box-sizing: border-box;
+  padding: 14px 10px;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+}
+.arrow-icon.arrow-rotate {
+  transform: rotate(180deg);
+}

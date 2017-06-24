@@ -1,0 +1,8 @@
+/* pages/Scroll/Scroll.wxss */
+.scroll-item {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.scroll-item:nth-child(even) {
+  background: #fff;
+}
