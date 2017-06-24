@@ -3,12 +3,12 @@
     "pages/index/index",
     "pages/component/component",
     "pages/adComponent/adComponent",
+    "pages/List/List",
     "pages/ActionSheet/ActionSheet",
     "pages/Modal/Modal",
     "pages/Scroll/Scroll",
     "pages/Accordion/Accordion",
     "pages/Tabs/Tabs",
-    "pages/List/List",
     "pages/Rate/Rate",
     "pages/Loading/Loading",
     "pages/Toast/Toast",
@@ -44,8 +44,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小程序组件",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#f5f5f5",
-    "enablePullDownRefresh": true
+    "backgroundColor": "#f5f5f5"
   },
   "tabBar": {
     "color": "black",

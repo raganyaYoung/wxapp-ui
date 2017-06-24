@@ -1,6 +1,8 @@
 /* pages/List/List.wxss */
 .list {
   color: #444;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .list .list-title {
   box-sizing: border-box;
@@ -9,6 +11,7 @@
 }
 .list-items {
   background: #fff;
+  box-sizing: border-box;
 }
 .list-item {
   box-sizing: border-box;
