@@ -5,8 +5,8 @@
 
 ##### 上图：
 
-![](./images/cut1.jpeg)
-![](./images/cut2.jpeg)
-![](./images/cut3.jpeg)
-![](./images/cut4.jpeg)
-![](./images/cut5.jpeg)
+![](./images/cut1.jpg)
+![](./images/cut2.jpg)
+![](./images/cut3.jpg)
+![](./images/cut4.jpg)
+![](./images/cut5.jpg)
